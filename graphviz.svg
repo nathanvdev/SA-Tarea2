@@ -1,0 +1,366 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1100pt" height="266pt" viewBox="0.00 0.00 1100.10 265.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 261.6)">
+<title>OnlineShoppingMicroservices</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-261.6 1096.1,-261.6 1096.1,4 -4,4"/>
+<!-- C -->
+<g id="node1" class="node">
+<title>C</title>
+<ellipse fill="lightpink" stroke="black" cx="411" cy="-239.6" rx="48.59" ry="18"/>
+<text text-anchor="middle" x="411" y="-235.4" font-family="Times,serif" font-size="14.00">Customer</text>
+</g>
+<!-- API_GW -->
+<g id="node4" class="node">
+<title>API_GW</title>
+<polygon fill="lightblue" stroke="black" points="584.91,-185.6 493.09,-185.6 493.09,-181.6 489.09,-181.6 489.09,-177.6 493.09,-177.6 493.09,-157.6 489.09,-157.6 489.09,-153.6 493.09,-153.6 493.09,-149.6 584.91,-149.6 584.91,-185.6"/>
+<polyline fill="none" stroke="black" points="493.09,-181.6 497.09,-181.6 497.09,-177.6 493.09,-177.6"/>
+<polyline fill="none" stroke="black" points="493.09,-157.6 497.09,-157.6 497.09,-153.6 493.09,-153.6"/>
+<text text-anchor="middle" x="539" y="-163.4" font-family="Times,serif" font-size="14.00">API Gateway</text>
+</g>
+<!-- C&#45;&gt;API_GW -->
+<g id="edge1" class="edge">
+<title>C-&gt;API_GW</title>
+<path fill="none" stroke="black" d="M428.88,-210.98C428.88,-210.98 428.88,-180.46 428.88,-180.46 428.88,-180.46 481.1,-180.46 481.1,-180.46"/>
+<polygon fill="black" stroke="black" points="425.38,-210.98 428.88,-220.98 432.38,-210.98 425.38,-210.98"/>
+<polygon fill="black" stroke="black" points="481.1,-183.96 491.1,-180.46 481.1,-176.96 481.1,-183.96"/>
+</g>
+<!-- S -->
+<g id="node2" class="node">
+<title>S</title>
+<ellipse fill="lightpink" stroke="black" cx="539" cy="-239.6" rx="43.76" ry="18"/>
+<text text-anchor="middle" x="539" y="-235.4" font-family="Times,serif" font-size="14.00">Supplier</text>
+</g>
+<!-- S&#45;&gt;API_GW -->
+<g id="edge2" class="edge">
+<title>S-&gt;API_GW</title>
+<path fill="none" stroke="black" d="M539,-209.92C539,-209.92 539,-197.53 539,-197.53"/>
+<polygon fill="black" stroke="black" points="535.5,-209.92 539,-219.92 542.5,-209.92 535.5,-209.92"/>
+<polygon fill="black" stroke="black" points="542.5,-197.53 539,-187.53 535.5,-197.53 542.5,-197.53"/>
+</g>
+<!-- SS -->
+<g id="node3" class="node">
+<title>SS</title>
+<ellipse fill="lightpink" stroke="black" cx="696" cy="-239.6" rx="77.29" ry="18"/>
+<text text-anchor="middle" x="696" y="-235.4" font-family="Times,serif" font-size="14.00">Shipping Service</text>
+</g>
+<!-- SS&#45;&gt;API_GW -->
+<g id="edge24" class="edge">
+<title>SS-&gt;API_GW</title>
+<path fill="none" stroke="black" d="M647.29,-213.77C647.29,-213.77 647.29,-180.46 647.29,-180.46 647.29,-180.46 596.75,-180.46 596.75,-180.46"/>
+<polygon fill="black" stroke="black" points="643.79,-213.77 647.29,-223.77 650.79,-213.77 643.79,-213.77"/>
+<polygon fill="black" stroke="black" points="596.75,-176.96 586.75,-180.46 596.75,-183.96 596.75,-176.96"/>
+</g>
+<!-- Auth -->
+<g id="node5" class="node">
+<title>Auth</title>
+<polygon fill="lightgreen" stroke="black" points="54,-110.8 0,-110.8 0,-106.8 -4,-106.8 -4,-102.8 0,-102.8 0,-82.8 -4,-82.8 -4,-78.8 0,-78.8 0,-74.8 54,-74.8 54,-110.8"/>
+<polyline fill="none" stroke="black" points="0,-106.8 4,-106.8 4,-102.8 0,-102.8"/>
+<polyline fill="none" stroke="black" points="0,-82.8 4,-82.8 4,-78.8 0,-78.8"/>
+<text text-anchor="middle" x="27" y="-88.6" font-family="Times,serif" font-size="14.00">Auth</text>
+</g>
+<!-- API_GW&#45;&gt;Auth -->
+<g id="edge3" class="edge">
+<title>API_GW-&gt;Auth</title>
+<path fill="none" stroke="black" d="M481.15,-175.31C481.15,-175.31 27,-175.31 27,-175.31 27,-175.31 27,-122.63 27,-122.63"/>
+<polygon fill="black" stroke="black" points="481.15,-178.81 491.15,-175.31 481.15,-171.81 481.15,-178.81"/>
+<polygon fill="black" stroke="black" points="30.5,-122.63 27,-112.63 23.5,-122.63 30.5,-122.63"/>
+</g>
+<!-- User -->
+<g id="node6" class="node">
+<title>User</title>
+<polygon fill="lightgreen" stroke="black" points="155.88,-113.6 90.12,-113.6 90.12,-109.6 86.12,-109.6 86.12,-105.6 90.12,-105.6 90.12,-80 86.12,-80 86.12,-76 90.12,-76 90.12,-72 155.88,-72 155.88,-113.6"/>
+<polyline fill="none" stroke="black" points="90.12,-109.6 94.12,-109.6 94.12,-105.6 90.12,-105.6"/>
+<polyline fill="none" stroke="black" points="90.12,-80 94.12,-80 94.12,-76 90.12,-76"/>
+<text text-anchor="middle" x="123" y="-97" font-family="Times,serif" font-size="14.00">Profile</text>
+<text text-anchor="middle" x="123" y="-80.2" font-family="Times,serif" font-size="14.00">Manager</text>
+</g>
+<!-- API_GW&#45;&gt;User -->
+<g id="edge4" class="edge">
+<title>API_GW-&gt;User</title>
+<path fill="none" stroke="black" d="M481.38,-170.17C481.38,-170.17 123,-170.17 123,-170.17 123,-170.17 123,-125.46 123,-125.46"/>
+<polygon fill="black" stroke="black" points="481.38,-173.67 491.38,-170.17 481.38,-166.67 481.38,-173.67"/>
+<polygon fill="black" stroke="black" points="126.5,-125.46 123,-115.46 119.5,-125.46 126.5,-125.46"/>
+</g>
+<!-- Catalog -->
+<g id="node7" class="node">
+<title>Catalog</title>
+<polygon fill="lightgreen" stroke="black" points="251.78,-113.6 192.22,-113.6 192.22,-109.6 188.22,-109.6 188.22,-105.6 192.22,-105.6 192.22,-80 188.22,-80 188.22,-76 192.22,-76 192.22,-72 251.78,-72 251.78,-113.6"/>
+<polyline fill="none" stroke="black" points="192.22,-109.6 196.22,-109.6 196.22,-105.6 192.22,-105.6"/>
+<polyline fill="none" stroke="black" points="192.22,-80 196.22,-80 196.22,-76 192.22,-76"/>
+<text text-anchor="middle" x="222" y="-97" font-family="Times,serif" font-size="14.00">Product</text>
+<text text-anchor="middle" x="222" y="-80.2" font-family="Times,serif" font-size="14.00">Catalog</text>
+</g>
+<!-- API_GW&#45;&gt;Catalog -->
+<g id="edge5" class="edge">
+<title>API_GW-&gt;Catalog</title>
+<path fill="none" stroke="black" d="M481.39,-165.03C481.39,-165.03 222,-165.03 222,-165.03 222,-165.03 222,-125.59 222,-125.59"/>
+<polygon fill="black" stroke="black" points="481.39,-168.53 491.39,-165.03 481.39,-161.53 481.39,-168.53"/>
+<polygon fill="black" stroke="black" points="225.5,-125.59 222,-115.59 218.5,-125.59 225.5,-125.59"/>
+</g>
+<!-- Offer -->
+<g id="node8" class="node">
+<title>Offer</title>
+<polygon fill="lightgreen" stroke="black" points="362.56,-113.6 287.44,-113.6 287.44,-109.6 283.44,-109.6 283.44,-105.6 287.44,-105.6 287.44,-80 283.44,-80 283.44,-76 287.44,-76 287.44,-72 362.56,-72 362.56,-113.6"/>
+<polyline fill="none" stroke="black" points="287.44,-109.6 291.44,-109.6 291.44,-105.6 287.44,-105.6"/>
+<polyline fill="none" stroke="black" points="287.44,-80 291.44,-80 291.44,-76 287.44,-76"/>
+<text text-anchor="middle" x="325" y="-97" font-family="Times,serif" font-size="14.00">Promotion</text>
+<text text-anchor="middle" x="325" y="-80.2" font-family="Times,serif" font-size="14.00">Engine</text>
+</g>
+<!-- API_GW&#45;&gt;Offer -->
+<g id="edge12" class="edge">
+<title>API_GW-&gt;Offer</title>
+<path fill="none" stroke="black" d="M481.3,-159.89C481.3,-159.89 324.93,-159.89 324.93,-159.89 324.93,-159.89 324.93,-125.54 324.93,-125.54"/>
+<polygon fill="black" stroke="black" points="481.3,-163.39 491.3,-159.89 481.3,-156.39 481.3,-163.39"/>
+<polygon fill="black" stroke="black" points="328.43,-125.54 324.93,-115.54 321.43,-125.54 328.43,-125.54"/>
+</g>
+<!-- Cart -->
+<g id="node9" class="node">
+<title>Cart</title>
+<polygon fill="lightgreen" stroke="black" points="467.84,-113.6 398.16,-113.6 398.16,-109.6 394.16,-109.6 394.16,-105.6 398.16,-105.6 398.16,-80 394.16,-80 394.16,-76 398.16,-76 398.16,-72 467.84,-72 467.84,-113.6"/>
+<polyline fill="none" stroke="black" points="398.16,-109.6 402.16,-109.6 402.16,-105.6 398.16,-105.6"/>
+<polyline fill="none" stroke="black" points="398.16,-80 402.16,-80 402.16,-76 398.16,-76"/>
+<text text-anchor="middle" x="433" y="-97" font-family="Times,serif" font-size="14.00">Shopping</text>
+<text text-anchor="middle" x="433" y="-80.2" font-family="Times,serif" font-size="14.00">Cart</text>
+</g>
+<!-- API_GW&#45;&gt;Cart -->
+<g id="edge6" class="edge">
+<title>API_GW-&gt;Cart</title>
+<path fill="none" stroke="black" d="M481.09,-154.74C481.09,-154.74 463.71,-154.74 463.71,-154.74 463.71,-154.74 463.71,-125.28 463.71,-125.28"/>
+<polygon fill="black" stroke="black" points="481.09,-158.24 491.09,-154.74 481.09,-151.24 481.09,-158.24"/>
+<polygon fill="black" stroke="black" points="467.21,-125.28 463.71,-115.28 460.21,-125.28 467.21,-125.28"/>
+</g>
+<!-- Order -->
+<g id="node10" class="node">
+<title>Order</title>
+<polygon fill="lightgreen" stroke="black" points="574.22,-113.6 503.78,-113.6 503.78,-109.6 499.78,-109.6 499.78,-105.6 503.78,-105.6 503.78,-80 499.78,-80 499.78,-76 503.78,-76 503.78,-72 574.22,-72 574.22,-113.6"/>
+<polyline fill="none" stroke="black" points="503.78,-109.6 507.78,-109.6 507.78,-105.6 503.78,-105.6"/>
+<polyline fill="none" stroke="black" points="503.78,-80 507.78,-80 507.78,-76 503.78,-76"/>
+<text text-anchor="middle" x="539" y="-97" font-family="Times,serif" font-size="14.00">Order</text>
+<text text-anchor="middle" x="539" y="-80.2" font-family="Times,serif" font-size="14.00">Processor</text>
+</g>
+<!-- API_GW&#45;&gt;Order -->
+<g id="edge7" class="edge">
+<title>API_GW-&gt;Order</title>
+<path fill="none" stroke="black" d="M539,-137.6C539,-137.6 539,-125.5 539,-125.5"/>
+<polygon fill="black" stroke="black" points="535.5,-137.6 539,-147.6 542.5,-137.6 535.5,-137.6"/>
+<polygon fill="black" stroke="black" points="542.5,-125.5 539,-115.5 535.5,-125.5 542.5,-125.5"/>
+</g>
+<!-- Payment -->
+<g id="node11" class="node">
+<title>Payment</title>
+<polygon fill="lightgreen" stroke="black" points="675.88,-113.6 610.12,-113.6 610.12,-109.6 606.12,-109.6 606.12,-105.6 610.12,-105.6 610.12,-80 606.12,-80 606.12,-76 610.12,-76 610.12,-72 675.88,-72 675.88,-113.6"/>
+<polyline fill="none" stroke="black" points="610.12,-109.6 614.12,-109.6 614.12,-105.6 610.12,-105.6"/>
+<polyline fill="none" stroke="black" points="610.12,-80 614.12,-80 614.12,-76 610.12,-76"/>
+<text text-anchor="middle" x="643" y="-97" font-family="Times,serif" font-size="14.00">Payment</text>
+<text text-anchor="middle" x="643" y="-80.2" font-family="Times,serif" font-size="14.00">Gateway</text>
+</g>
+<!-- API_GW&#45;&gt;Payment -->
+<g id="edge8" class="edge">
+<title>API_GW-&gt;Payment</title>
+<path fill="none" stroke="black" d="M596.56,-154.74C596.56,-154.74 614.42,-154.74 614.42,-154.74 614.42,-154.74 614.42,-125.28 614.42,-125.28"/>
+<polygon fill="black" stroke="black" points="596.56,-151.24 586.56,-154.74 596.56,-158.24 596.56,-151.24"/>
+<polygon fill="black" stroke="black" points="617.92,-125.28 614.42,-115.28 610.92,-125.28 617.92,-125.28"/>
+</g>
+<!-- Shipping -->
+<g id="node12" class="node">
+<title>Shipping</title>
+<polygon fill="lightgreen" stroke="black" points="778.28,-113.6 711.72,-113.6 711.72,-109.6 707.72,-109.6 707.72,-105.6 711.72,-105.6 711.72,-80 707.72,-80 707.72,-76 711.72,-76 711.72,-72 778.28,-72 778.28,-113.6"/>
+<polyline fill="none" stroke="black" points="711.72,-109.6 715.72,-109.6 715.72,-105.6 711.72,-105.6"/>
+<polyline fill="none" stroke="black" points="711.72,-80 715.72,-80 715.72,-76 711.72,-76"/>
+<text text-anchor="middle" x="745" y="-97" font-family="Times,serif" font-size="14.00">Shipping</text>
+<text text-anchor="middle" x="745" y="-80.2" font-family="Times,serif" font-size="14.00">Manager</text>
+</g>
+<!-- API_GW&#45;&gt;Shipping -->
+<g id="edge9" class="edge">
+<title>API_GW-&gt;Shipping</title>
+<path fill="none" stroke="black" d="M596.69,-159.89C596.69,-159.89 742.5,-159.89 742.5,-159.89 742.5,-159.89 742.5,-125.54 742.5,-125.54"/>
+<polygon fill="black" stroke="black" points="596.69,-156.39 586.69,-159.89 596.69,-163.39 596.69,-156.39"/>
+<polygon fill="black" stroke="black" points="746,-125.54 742.5,-115.54 739,-125.54 746,-125.54"/>
+</g>
+<!-- Returns -->
+<g id="node13" class="node">
+<title>Returns</title>
+<polygon fill="lightgreen" stroke="black" points="885.8,-113.6 814.2,-113.6 814.2,-109.6 810.2,-109.6 810.2,-105.6 814.2,-105.6 814.2,-80 810.2,-80 810.2,-76 814.2,-76 814.2,-72 885.8,-72 885.8,-113.6"/>
+<polyline fill="none" stroke="black" points="814.2,-109.6 818.2,-109.6 818.2,-105.6 814.2,-105.6"/>
+<polyline fill="none" stroke="black" points="814.2,-80 818.2,-80 818.2,-76 814.2,-76"/>
+<text text-anchor="middle" x="850" y="-97" font-family="Times,serif" font-size="14.00">Returns </text>
+<text text-anchor="middle" x="850" y="-80.2" font-family="Times,serif" font-size="14.00">&amp; Refund</text>
+</g>
+<!-- API_GW&#45;&gt;Returns -->
+<g id="edge10" class="edge">
+<title>API_GW-&gt;Returns</title>
+<path fill="none" stroke="black" d="M596.74,-165.03C596.74,-165.03 850,-165.03 850,-165.03 850,-165.03 850,-125.59 850,-125.59"/>
+<polygon fill="black" stroke="black" points="596.74,-161.53 586.74,-165.03 596.74,-168.53 596.74,-161.53"/>
+<polygon fill="black" stroke="black" points="853.5,-125.59 850,-115.59 846.5,-125.59 853.5,-125.59"/>
+</g>
+<!-- Review -->
+<g id="node14" class="node">
+<title>Review</title>
+<polygon fill="lightgreen" stroke="black" points="991.82,-110.8 922.18,-110.8 922.18,-106.8 918.18,-106.8 918.18,-102.8 922.18,-102.8 922.18,-82.8 918.18,-82.8 918.18,-78.8 922.18,-78.8 922.18,-74.8 991.82,-74.8 991.82,-110.8"/>
+<polyline fill="none" stroke="black" points="922.18,-106.8 926.18,-106.8 926.18,-102.8 922.18,-102.8"/>
+<polyline fill="none" stroke="black" points="922.18,-82.8 926.18,-82.8 926.18,-78.8 922.18,-78.8"/>
+<text text-anchor="middle" x="957" y="-88.6" font-family="Times,serif" font-size="14.00">Feedback</text>
+</g>
+<!-- API_GW&#45;&gt;Review -->
+<g id="edge11" class="edge">
+<title>API_GW-&gt;Review</title>
+<path fill="none" stroke="black" d="M596.84,-170.17C596.84,-170.17 957,-170.17 957,-170.17 957,-170.17 957,-122.65 957,-122.65"/>
+<polygon fill="black" stroke="black" points="596.84,-166.67 586.84,-170.17 596.84,-173.67 596.84,-166.67"/>
+<polygon fill="black" stroke="black" points="960.5,-122.65 957,-112.65 953.5,-122.65 960.5,-122.65"/>
+</g>
+<!-- Reporting -->
+<g id="node15" class="node">
+<title>Reporting</title>
+<polygon fill="lightgreen" stroke="black" points="1092.1,-110.8 1027.9,-110.8 1027.9,-106.8 1023.9,-106.8 1023.9,-102.8 1027.9,-102.8 1027.9,-82.8 1023.9,-82.8 1023.9,-78.8 1027.9,-78.8 1027.9,-74.8 1092.1,-74.8 1092.1,-110.8"/>
+<polyline fill="none" stroke="black" points="1027.9,-106.8 1031.9,-106.8 1031.9,-102.8 1027.9,-102.8"/>
+<polyline fill="none" stroke="black" points="1027.9,-82.8 1031.9,-82.8 1031.9,-78.8 1027.9,-78.8"/>
+<text text-anchor="middle" x="1060" y="-88.6" font-family="Times,serif" font-size="14.00">Analytic</text>
+</g>
+<!-- API_GW&#45;&gt;Reporting -->
+<g id="edge13" class="edge">
+<title>API_GW-&gt;Reporting</title>
+<path fill="none" stroke="black" d="M596.75,-175.31C596.75,-175.31 1060,-175.31 1060,-175.31 1060,-175.31 1060,-122.63 1060,-122.63"/>
+<polygon fill="black" stroke="black" points="596.75,-171.81 586.75,-175.31 596.75,-178.81 596.75,-171.81"/>
+<polygon fill="black" stroke="black" points="1063.5,-122.63 1060,-112.63 1056.5,-122.63 1063.5,-122.63"/>
+</g>
+<!-- UserDB -->
+<g id="node16" class="node">
+<title>UserDB</title>
+<path fill="lightyellow" stroke="black" d="M150.05,-32.73C150.05,-34.53 137.93,-36 123,-36 108.07,-36 95.95,-34.53 95.95,-32.73 95.95,-32.73 95.95,-3.27 95.95,-3.27 95.95,-1.47 108.07,0 123,0 137.93,0 150.05,-1.47 150.05,-3.27 150.05,-3.27 150.05,-32.73 150.05,-32.73"/>
+<path fill="none" stroke="black" d="M150.05,-32.73C150.05,-30.92 137.93,-29.45 123,-29.45 108.07,-29.45 95.95,-30.92 95.95,-32.73"/>
+<text text-anchor="middle" x="123" y="-13.8" font-family="Times,serif" font-size="14.00">Profile</text>
+</g>
+<!-- User&#45;&gt;UserDB -->
+<g id="edge14" class="edge">
+<title>User-&gt;UserDB</title>
+<path fill="none" stroke="black" d="M123,-60.05C123,-60.05 123,-48 123,-48"/>
+<polygon fill="black" stroke="black" points="119.5,-60.05 123,-70.05 126.5,-60.05 119.5,-60.05"/>
+<polygon fill="black" stroke="black" points="126.5,-48 123,-38 119.5,-48 126.5,-48"/>
+</g>
+<!-- CatalogDB -->
+<g id="node17" class="node">
+<title>CatalogDB</title>
+<path fill="lightyellow" stroke="black" d="M251.77,-32.73C251.77,-34.53 238.43,-36 222,-36 205.57,-36 192.23,-34.53 192.23,-32.73 192.23,-32.73 192.23,-3.27 192.23,-3.27 192.23,-1.47 205.57,0 222,0 238.43,0 251.77,-1.47 251.77,-3.27 251.77,-3.27 251.77,-32.73 251.77,-32.73"/>
+<path fill="none" stroke="black" d="M251.77,-32.73C251.77,-30.92 238.43,-29.45 222,-29.45 205.57,-29.45 192.23,-30.92 192.23,-32.73"/>
+<text text-anchor="middle" x="222" y="-13.8" font-family="Times,serif" font-size="14.00">Catalog</text>
+</g>
+<!-- Catalog&#45;&gt;CatalogDB -->
+<g id="edge15" class="edge">
+<title>Catalog-&gt;CatalogDB</title>
+<path fill="none" stroke="black" d="M222,-60.05C222,-60.05 222,-48 222,-48"/>
+<polygon fill="black" stroke="black" points="218.5,-60.05 222,-70.05 225.5,-60.05 218.5,-60.05"/>
+<polygon fill="black" stroke="black" points="225.5,-48 222,-38 218.5,-48 225.5,-48"/>
+</g>
+<!-- OfferDB -->
+<g id="node23" class="node">
+<title>OfferDB</title>
+<path fill="lightyellow" stroke="black" d="M362.56,-32.73C362.56,-34.53 345.72,-36 325,-36 304.28,-36 287.44,-34.53 287.44,-32.73 287.44,-32.73 287.44,-3.27 287.44,-3.27 287.44,-1.47 304.28,0 325,0 345.72,0 362.56,-1.47 362.56,-3.27 362.56,-3.27 362.56,-32.73 362.56,-32.73"/>
+<path fill="none" stroke="black" d="M362.56,-32.73C362.56,-30.92 345.72,-29.45 325,-29.45 304.28,-29.45 287.44,-30.92 287.44,-32.73"/>
+<text text-anchor="middle" x="325" y="-13.8" font-family="Times,serif" font-size="14.00">Promotion</text>
+</g>
+<!-- Offer&#45;&gt;OfferDB -->
+<g id="edge21" class="edge">
+<title>Offer-&gt;OfferDB</title>
+<path fill="none" stroke="black" d="M325,-60.05C325,-60.05 325,-48 325,-48"/>
+<polygon fill="black" stroke="black" points="321.5,-60.05 325,-70.05 328.5,-60.05 321.5,-60.05"/>
+<polygon fill="black" stroke="black" points="328.5,-48 325,-38 321.5,-48 328.5,-48"/>
+</g>
+<!-- CartDB -->
+<g id="node18" class="node">
+<title>CartDB</title>
+<path fill="lightyellow" stroke="black" d="M460,-32.73C460,-34.53 447.9,-36 433,-36 418.1,-36 406,-34.53 406,-32.73 406,-32.73 406,-3.27 406,-3.27 406,-1.47 418.1,0 433,0 447.9,0 460,-1.47 460,-3.27 460,-3.27 460,-32.73 460,-32.73"/>
+<path fill="none" stroke="black" d="M460,-32.73C460,-30.92 447.9,-29.45 433,-29.45 418.1,-29.45 406,-30.92 406,-32.73"/>
+<text text-anchor="middle" x="433" y="-13.8" font-family="Times,serif" font-size="14.00">Cart</text>
+</g>
+<!-- Cart&#45;&gt;CartDB -->
+<g id="edge16" class="edge">
+<title>Cart-&gt;CartDB</title>
+<path fill="none" stroke="black" d="M433,-60.05C433,-60.05 433,-48 433,-48"/>
+<polygon fill="black" stroke="black" points="429.5,-60.05 433,-70.05 436.5,-60.05 429.5,-60.05"/>
+<polygon fill="black" stroke="black" points="436.5,-48 433,-38 429.5,-48 436.5,-48"/>
+</g>
+<!-- OrderDB -->
+<g id="node25" class="node">
+<title>OrderDB</title>
+<path fill="lightyellow" stroke="black" d="M566,-32.73C566,-34.53 553.9,-36 539,-36 524.1,-36 512,-34.53 512,-32.73 512,-32.73 512,-3.27 512,-3.27 512,-1.47 524.1,0 539,0 553.9,0 566,-1.47 566,-3.27 566,-3.27 566,-32.73 566,-32.73"/>
+<path fill="none" stroke="black" d="M566,-32.73C566,-30.92 553.9,-29.45 539,-29.45 524.1,-29.45 512,-30.92 512,-32.73"/>
+<text text-anchor="middle" x="539" y="-13.8" font-family="Times,serif" font-size="14.00">Order</text>
+</g>
+<!-- Order&#45;&gt;OrderDB -->
+<g id="edge23" class="edge">
+<title>Order-&gt;OrderDB</title>
+<path fill="none" stroke="black" d="M539,-60.05C539,-60.05 539,-48 539,-48"/>
+<polygon fill="black" stroke="black" points="535.5,-60.05 539,-70.05 542.5,-60.05 535.5,-60.05"/>
+<polygon fill="black" stroke="black" points="542.5,-48 539,-38 535.5,-48 542.5,-48"/>
+</g>
+<!-- PaymentDB -->
+<g id="node19" class="node">
+<title>PaymentDB</title>
+<path fill="lightyellow" stroke="black" d="M675.5,-32.73C675.5,-34.53 660.93,-36 643,-36 625.07,-36 610.5,-34.53 610.5,-32.73 610.5,-32.73 610.5,-3.27 610.5,-3.27 610.5,-1.47 625.07,0 643,0 660.93,0 675.5,-1.47 675.5,-3.27 675.5,-3.27 675.5,-32.73 675.5,-32.73"/>
+<path fill="none" stroke="black" d="M675.5,-32.73C675.5,-30.92 660.93,-29.45 643,-29.45 625.07,-29.45 610.5,-30.92 610.5,-32.73"/>
+<text text-anchor="middle" x="643" y="-13.8" font-family="Times,serif" font-size="14.00">Payment</text>
+</g>
+<!-- Payment&#45;&gt;PaymentDB -->
+<g id="edge17" class="edge">
+<title>Payment-&gt;PaymentDB</title>
+<path fill="none" stroke="black" d="M643,-60.05C643,-60.05 643,-48 643,-48"/>
+<polygon fill="black" stroke="black" points="639.5,-60.05 643,-70.05 646.5,-60.05 639.5,-60.05"/>
+<polygon fill="black" stroke="black" points="646.5,-48 643,-38 639.5,-48 646.5,-48"/>
+</g>
+<!-- ShippingDB -->
+<g id="node20" class="node">
+<title>ShippingDB</title>
+<path fill="lightyellow" stroke="black" d="M778.28,-32.73C778.28,-34.53 763.36,-36 745,-36 726.64,-36 711.72,-34.53 711.72,-32.73 711.72,-32.73 711.72,-3.27 711.72,-3.27 711.72,-1.47 726.64,0 745,0 763.36,0 778.28,-1.47 778.28,-3.27 778.28,-3.27 778.28,-32.73 778.28,-32.73"/>
+<path fill="none" stroke="black" d="M778.28,-32.73C778.28,-30.92 763.36,-29.45 745,-29.45 726.64,-29.45 711.72,-30.92 711.72,-32.73"/>
+<text text-anchor="middle" x="745" y="-13.8" font-family="Times,serif" font-size="14.00">Shipping</text>
+</g>
+<!-- Shipping&#45;&gt;ShippingDB -->
+<g id="edge18" class="edge">
+<title>Shipping-&gt;ShippingDB</title>
+<path fill="none" stroke="black" d="M745,-60.05C745,-60.05 745,-48 745,-48"/>
+<polygon fill="black" stroke="black" points="741.5,-60.05 745,-70.05 748.5,-60.05 741.5,-60.05"/>
+<polygon fill="black" stroke="black" points="748.5,-48 745,-38 741.5,-48 748.5,-48"/>
+</g>
+<!-- ReturnsDB -->
+<g id="node21" class="node">
+<title>ReturnsDB</title>
+<path fill="lightyellow" stroke="black" d="M877.05,-32.73C877.05,-34.53 864.93,-36 850,-36 835.07,-36 822.95,-34.53 822.95,-32.73 822.95,-32.73 822.95,-3.27 822.95,-3.27 822.95,-1.47 835.07,0 850,0 864.93,0 877.05,-1.47 877.05,-3.27 877.05,-3.27 877.05,-32.73 877.05,-32.73"/>
+<path fill="none" stroke="black" d="M877.05,-32.73C877.05,-30.92 864.93,-29.45 850,-29.45 835.07,-29.45 822.95,-30.92 822.95,-32.73"/>
+<text text-anchor="middle" x="850" y="-13.8" font-family="Times,serif" font-size="14.00">Return</text>
+</g>
+<!-- Returns&#45;&gt;ReturnsDB -->
+<g id="edge19" class="edge">
+<title>Returns-&gt;ReturnsDB</title>
+<path fill="none" stroke="black" d="M850,-60.05C850,-60.05 850,-48 850,-48"/>
+<polygon fill="black" stroke="black" points="846.5,-60.05 850,-70.05 853.5,-60.05 846.5,-60.05"/>
+<polygon fill="black" stroke="black" points="853.5,-48 850,-38 846.5,-48 853.5,-48"/>
+</g>
+<!-- ReviewDB -->
+<g id="node22" class="node">
+<title>ReviewDB</title>
+<path fill="lightyellow" stroke="black" d="M991.82,-32.73C991.82,-34.53 976.21,-36 957,-36 937.79,-36 922.18,-34.53 922.18,-32.73 922.18,-32.73 922.18,-3.27 922.18,-3.27 922.18,-1.47 937.79,0 957,0 976.21,0 991.82,-1.47 991.82,-3.27 991.82,-3.27 991.82,-32.73 991.82,-32.73"/>
+<path fill="none" stroke="black" d="M991.82,-32.73C991.82,-30.92 976.21,-29.45 957,-29.45 937.79,-29.45 922.18,-30.92 922.18,-32.73"/>
+<text text-anchor="middle" x="957" y="-13.8" font-family="Times,serif" font-size="14.00">Feedback</text>
+</g>
+<!-- Review&#45;&gt;ReviewDB -->
+<g id="edge20" class="edge">
+<title>Review-&gt;ReviewDB</title>
+<path fill="none" stroke="black" d="M957,-62.8C957,-62.8 957,-47.79 957,-47.79"/>
+<polygon fill="black" stroke="black" points="953.5,-62.8 957,-72.8 960.5,-62.8 953.5,-62.8"/>
+<polygon fill="black" stroke="black" points="960.5,-47.79 957,-37.79 953.5,-47.79 960.5,-47.79"/>
+</g>
+<!-- ReportingDB -->
+<g id="node24" class="node">
+<title>ReportingDB</title>
+<path fill="lightyellow" stroke="black" d="M1092.1,-32.73C1092.1,-34.53 1077.71,-36 1060,-36 1042.29,-36 1027.9,-34.53 1027.9,-32.73 1027.9,-32.73 1027.9,-3.27 1027.9,-3.27 1027.9,-1.47 1042.29,0 1060,0 1077.71,0 1092.1,-1.47 1092.1,-3.27 1092.1,-3.27 1092.1,-32.73 1092.1,-32.73"/>
+<path fill="none" stroke="black" d="M1092.1,-32.73C1092.1,-30.92 1077.71,-29.45 1060,-29.45 1042.29,-29.45 1027.9,-30.92 1027.9,-32.73"/>
+<text text-anchor="middle" x="1060" y="-13.8" font-family="Times,serif" font-size="14.00">Analytic</text>
+</g>
+<!-- Reporting&#45;&gt;ReportingDB -->
+<g id="edge22" class="edge">
+<title>Reporting-&gt;ReportingDB</title>
+<path fill="none" stroke="black" d="M1060,-62.8C1060,-62.8 1060,-47.79 1060,-47.79"/>
+<polygon fill="black" stroke="black" points="1056.5,-62.8 1060,-72.8 1063.5,-62.8 1056.5,-62.8"/>
+<polygon fill="black" stroke="black" points="1063.5,-47.79 1060,-37.79 1056.5,-47.79 1063.5,-47.79"/>
+</g>
+</g>
+</svg>

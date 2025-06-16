@@ -1,0 +1,173 @@
+version: '3.8'
+
+services:
+  product-catalog:
+    build: ./src/product-catalog
+    ports:
+      - "3003:3003"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@product-catalog-db:5432/product_catalog
+    depends_on:
+      - product-catalog-db
+
+  product-catalog-db:
+    image: postgres:17.4
+    container_name: product-catalog-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=product_catalog
+    ports:
+      - "3503:5432"
+
+  promotions-engine:
+    build: ./src/promotions-engine
+    ports:
+      - "3004:3004"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@promotions-engine-db:5432/promotions_engine
+    depends_on:
+      - promotions-engine-db
+
+  promotions-engine-db:
+    image: postgres:17.4
+    container_name: promotions-engine-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=promotions_engine
+    ports:
+      - "3504:5432"
+
+  shopping-cart:
+    build: ./src/shopping-cart
+    ports:
+      - "3005:3005"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@shopping-cart-db:5432/shopping_cart
+    depends_on:
+      - shopping-cart-db
+
+  shopping-cart-db:
+    image: postgres:17.4
+    container_name: shopping-cart-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=shopping_cart
+    ports:
+      - "3505:5432"
+
+  order-processor:
+    build: ./src/order-processor
+    ports:
+      - "3006:3006"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@order-processor-db:5432/order_processor
+    depends_on:
+      - order-processor-db
+
+  order-processor-db:
+    image: postgres:17.4
+    container_name: order-processor-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=order_processor
+    ports:
+      - "3506:5432"
+
+  payment-gateway:
+    build: ./src/payment-gateway
+    ports:
+      - "3007:3007"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@payment-gateway-db:5432/payment_gateway
+    depends_on:
+      - payment-gateway-db
+
+  payment-gateway-db:
+    image: postgres:17.4
+    container_name: payment-gateway-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=payment_gateway
+    ports:
+      - "3507:5432"
+
+  shipment-manager:
+    build: ./src/shipment-manager
+    ports:
+      - "3008:3008"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@shipment-manager-db:5432/shipment_manager
+    depends_on:
+      - shipment-manager-db
+
+  shipment-manager-db:
+    image: postgres:17.4
+    container_name: shipment-manager-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=shipment_manager
+    ports:
+      - "3508:5432"
+
+  returns-handler:
+    build: ./src/returns-handler
+    ports:
+      - "3009:3009"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@returns-handler-db:5432/returns_handler
+    depends_on:
+      - returns-handler-db
+
+  returns-handler-db:
+    image: postgres:17.4
+    container_name: returns-handler-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=returns_handler
+    ports:
+      - "3509:5432"
+
+  feedback-collector:
+    build: ./src/feedback-collector
+    ports:
+      - "3010:3010"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@feedback-collector-db:5432/feedback_collector
+    depends_on:
+      - feedback-collector-db
+
+  feedback-collector-db:
+    image: postgres:17.4
+    container_name: feedback-collector-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=feedback_collector
+    ports:
+      - "3510:5432"
+
+  analytics-dashboard:
+    build: ./src/analytics-dashboard
+    ports:
+      - "3011:3011"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@analytics-dashboard-db:5432/analytics_dashboard
+    depends_on:
+      - analytics-dashboard-db
+
+  analytics-dashboard-db:
+    image: postgres:17.4
+    container_name: analytics-dashboard-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=analytics_dashboard
+    ports:
+      - "3511:5432"
